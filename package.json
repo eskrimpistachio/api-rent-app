@@ -1,0 +1,16 @@
+{
+  "name": "api-rent-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/eskrimpistachio/api-rent-app.git",
+  "author": "fatih <alfatihrizqialfian@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0",
+    "nodemon": "^3.0.1"
+  }
+}
