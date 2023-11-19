@@ -5,6 +5,9 @@
   "repository": "https://github.com/eskrimpistachio/api-rent-app.git",
   "author": "fatih <alfatihrizqialfian@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "nodemon server.js"
   },
