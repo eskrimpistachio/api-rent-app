@@ -24,6 +24,8 @@ const dataRouter = require('./routes/data.js')
 
 app.use('/data', dataRouter)
 
-app.listen(3000, () => {
+const port = process.env.PORT || 8000 ;
+
+app.listen(port, () => {
   console.log("Server berhasil dijalankan");
 });
