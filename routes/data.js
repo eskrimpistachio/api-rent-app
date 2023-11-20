@@ -32,14 +32,14 @@ router.get('/', async (req, res) => {
 router.post('/submit', async (req, res) => {
   const formData = req.body;
 
-  console.log(formData);
+  // console.log(formData);
 
   const response = await db
     .collection('rentals')
     .doc('rent')
     .set(formData);
 
-  res.status(200).send('Data berhasil di simpan!');
+  res.status(200).send(formData);
 });
 
 module.exports = router;
