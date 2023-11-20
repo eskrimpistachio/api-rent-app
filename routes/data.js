@@ -32,6 +32,8 @@ router.get('/', async (req, res) => {
 router.post('/submit', async (req, res) => {
   const formData = req.body;
 
+  console.log(formData);
+
   const response = await db
     .collection('rentals')
     .doc('rent')
