@@ -22,7 +22,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-  const dataApp = db.collection('rental').doc('rent');
+  const dataApp = db.collection('rentals').doc('rent');
 
   const data = await dataApp.get();
 
