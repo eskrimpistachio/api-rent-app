@@ -32,14 +32,12 @@ router.get('/', async (req, res) => {
 router.post('/submit', async (req, res) => {
   const formData = req.body;
 
-  // console.log(formData);
-
   const response = await db
     .collection('rentals')
     .doc('rent')
-    .set(formData);
+    .set(formData, { merge: true });
 
-  res.status(200).send(formData);
+  res.status(200).send('Data berhasil di simpan!');
 });
 
 module.exports = router;
