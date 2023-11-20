@@ -33,8 +33,8 @@ router.post('/submit', async (req, res) => {
   const formData = req.body;
 
   const response = await db
-    .collection('coba')
-    .doc('coba1')
+    .collection('rentals')
+    .doc('rent')
     .set(formData);
 
   res.status(200).send('Data berhasil di simpan!');
